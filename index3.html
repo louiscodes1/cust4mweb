@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Page for My Girl</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional styles for customized design */
+        .customizedDesign {
+            background-color: #f9f9f9;
+            border-radius: 20px;
+            padding: 20px;
+            text-align: center;
+            margin: 50px auto;
+            width: 60%;
+            max-width: 800px;
+            position: relative;
+            overflow: hidden; /* Hide overflow to prevent heart from showing outside the box */
+            animation: popUp 1s forwards; /* Animation to pop up from the right */
+        }
+
+        @keyframes popUp {
+            from {
+                transform: translateX(100%);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+
+        .customizedDesign::before {
+            content: '';
+            position: absolute;
+            top: -20px;
+            left: 20px;
+            border-width: 0 20px 20px 0;
+            border-style: solid;
+            border-color: #f9f9f9 #f9f9f9 transparent transparent;
+            z-index: 1;
+        }
+
+        .customizedText {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            padding-top: 40px; /* Increase padding to push text down further */
+            position: relative; /* Ensure text is positioned relative to its container */
+        }
+
+        .rotatedHeart {
+            font-size: 40px;
+            position: absolute;
+            top: -30px; /* Adjust top position */
+            left: -30px; /* Adjust left position */
+            z-index: 2; /* Ensure heart is above background */
+            transform: rotate(-45deg);
+        }
+
+        .backButton {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+
+        .backButton:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="customizedDesign">
+        <div class="rotatedHeart">❤️</div>
+        <div class="customizedText">
+            <!-- Your long and coquette text here -->
+            Hello my love! i just wanted to say that i am always grateful for everything you do, you never fail to make me laugh, smile, and giggle even if i am so upset, you always brighten up my day no matter how dark it is I love the way you smile, look, laugh i love the way how your so strong and confident i love the way how u never give up too fast on me i love the way you dont leave me so easily, i love the way how you love me. you are truly out of my league and yet you gave me the chance to love you, appreciate you, take care of you. and thats just shocking to me because i thought i will never have someone like you this beautiful, pretty, cute, and wonderful, georgous, smart, thoughtful, perfect, ineffable. thats all you i just want you to know that you will always be enough and that you should take care of yourself all the time no matter how down you are, upset, sad, you will always go back up because thats how life works you will always be better than everyone else, always remember that you have lots of friends to open up, ask for comfort, or ask anything in general. we will always have ur back no matter what happens. ikaw talaga ang nagpapasaya sakin and ayaw kita mawala sa buhay ko, if we do try seriously i want to be the love of your life until we die. you are the BEST person i have ever met you changed alot in my life. never think of bad thoughts on yourself okay? you will never be not enough. i love you alot my love take care all the time okay? mwa<3
+
+        </div>
+        <div class="backButton" onclick="window.location.href = 'index2.html';">go back</div>
+    </div>
+</body>
+</html>

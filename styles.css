@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #2980b9, #8e44ad);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.cloud {
+    /* Cloud styles */
+}
+
+.container {
+    max-width: 800px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.5s ease; /* Added transition property */
+    transform: translateY(100px); /* Initial position, moved 100px down */
+    z-index: 1; /* Ensure the container is above the clouds */
+    position: relative; /* Ensure the container's z-index works */
+}
+
+.container.show {
+    transform: translateY(0); /* Final position, moved back to original position */
+}
+
+.header {
+    padding: 20px 0;
+    background: linear-gradient(135deg, #3498db, #9b59b6);
+    color: #fff;
+    border-radius: 20px 20px 0 0;
+    transition: background-color 0.5s ease;
+}
+
+h1 {
+    margin: 0;
+    font-size: 3rem;
+}
+
+.content {
+    padding: 40px 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #9b59b6;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #8e44ad;
+}
+
+.cursor {
+    /* Cursor styles */
+}
+
+.date {
+    /* Date styles */
+}

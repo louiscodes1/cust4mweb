@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Page for My Girl</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional styles for cloud positioning */
+        .cloud {
+            position: absolute;
+            background: radial-gradient(circle at center, #fff 10%, transparent 50%);
+            border-radius: 50%;
+            opacity: 0.8;
+            z-index: -1;
+        }
+
+        .cloud:nth-child(1) {
+            top: 20%;
+            left: -200px;
+            width: 400px;
+            height: 150px;
+            animation: moveCloud1 60s linear infinite;
+        }
+
+        .cloud:nth-child(2) {
+            top: 30%;
+            left: -100px;
+            width: 300px;
+            height: 120px;
+            animation: moveCloud2 80s linear infinite;
+        }
+
+        .cloud:nth-child(3) {
+            top: 10%;
+            left: calc(100% - 100px);
+            width: 200px;
+            height: 80px;
+            animation: moveCloud3 100s linear infinite;
+        }
+
+        .cloud:nth-child(4) {
+            top: 50%;
+            left: calc(50% - 200px);
+            width: 400px;
+            height: 150px;
+            animation: moveCloud4 70s linear infinite;
+        }
+
+        .cloud:nth-child(5) {
+            top: 70%;
+            left: calc(75% - 300px);
+            width: 600px;
+            height: 200px;
+            animation: moveCloud5 90s linear infinite;
+        }
+
+        @keyframes moveCloud1 {
+            0% {
+                transform: translateX(-200px);
+            }
+            100% {
+                transform: translateX(calc(100vw + 200px));
+            }
+        }
+
+        @keyframes moveCloud2 {
+            0% {
+                transform: translateX(-100px);
+            }
+            100% {
+                transform: translateX(calc(100vw + 100px));
+            }
+        }
+
+        @keyframes moveCloud3 {
+            0% {
+                transform: translateX(calc(100% - 100px));
+            }
+            100% {
+                transform: translateX(-100px);
+            }
+        }
+
+        @keyframes moveCloud4 {
+            0% {
+                transform: translateX(calc(50% - 200px));
+            }
+            100% {
+                transform: translateX(calc(100vw + 200px));
+            }
+        }
+
+        @keyframes moveCloud5 {
+            0% {
+                transform: translateX(calc(75% - 300px));
+            }
+            100% {
+                transform: translateX(-300px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <audio id="backgroundMusic" autoplay loop>
+        <source src="background_music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <div class="cloud"></div>
+    <div class="cloud"></div>
+    <div class="cloud"></div>
+    <div class="cloud"></div>
+    <div class="cloud"></div>
+
+    <div class="container">
+        <div class="header">
+            <h1>Welcome, My Love</h1>
+        </div>
+        <div class="content">
+            <div class="button" id="customizedDesignBtn">Customized Design</div>
+            <div class="button" id="personalizedMessageBtn">Personalized Message</div>
+            <div class="button" id="virtualGiftsBtn">Virtual Gifts</div>
+            <div class="button" id="guestbookBtn">Guestbook</div>
+        </div>
+        <div class="date" id="currentDate"></div>
+    </div>
+
+    <div class="customizedDesignContainer">
+        <div class="customizedDesign">
+            <!-- Placeholder for customized design -->
+        </div>
+    </div>
+
+    <script src="script2.js"></script>
+</body>
+</html>
